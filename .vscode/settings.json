@@ -1,0 +1,12 @@
+{
+    "rust-analyzer.rustc.source": "discover",
+    "rust-analyzer.cargo.target": "x86_64-oso.json",
+    "rust-analyzer.cargo.buildScripts.enable": true,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.checkOnSave.extraArgs": [
+      "+nightly",
+      "-Zbuild-std=core,compiler_builtins,alloc",
+      "--target",
+      "x86_64-oso.json"
+    ]
+}
